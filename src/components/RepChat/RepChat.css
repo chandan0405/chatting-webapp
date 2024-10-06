@@ -1,0 +1,114 @@
+/* RepChat.css */
+
+body.rep-chat-body {
+  background-color: #333333; /* Dark gray background for the full page */
+  color: #ffffff; /* White font color */
+}
+
+.rep-chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #333333; /* Dark gray chat box */
+}
+
+.rep-chat-container p {
+  text-align: center;
+}
+
+.rep-chat-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #333333; /* Dark gray background */
+}
+
+.rep-chat-header .export-link {
+  color: #ffffff; /* White color */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.rep-chat-header .export-link:hover,
+.rep-chat-header .export-link:focus {
+  color: rgba(255, 0, 0, 0.63); /* Red color on hover or focus */
+}
+
+.rep-chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #333333; /* Dark gray chat box */
+  color: #ffffff; /* White font color */
+  border: 1px solid #ffffff; /* Thin white border */
+  border-radius: 10px;
+}
+
+.rep-chat-message {
+  margin-bottom: 10px;
+  color: #ffffff; /* White font color */
+  border: 1px solid #ffffff; /* Thin white border */
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.rep-chat-message.user {
+  text-align: right;
+  background-color: #800020; /* Oxblood message box */
+  color: #ffffff; /* White font color */
+}
+
+.rep-chat-message.assistant {
+  text-align: left;
+  background-color: #d3d3d3; /* Light gray message box */
+  color: #333333; /* Dark gray font color */
+}
+
+.rep-chat-message.rep {
+  text-align: left;
+  background-color: rgb(23, 192, 248); /* Light gray message box */
+  color: #333333; /* Dark gray font color */
+}
+
+.rep-chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #333333; /* Dark gray background */
+  position: relative; /* Ensure proper positioning of the send button */
+}
+
+.rep-chat-input input {
+  flex: 1;
+  padding: 10px 40px 10px 10px; /* Adjust padding to make space for the send button */
+  border: 1px solid #ffffff; /* Thin white border */
+  border-radius: 4px;
+  background-color: white; /* Dark gray input box */
+  color: black; /* White font color */
+  outline: none; /* Remove blue border on focus */
+}
+
+.rep-chat-input .send-button {
+  position: absolute;
+  right: 15px; /* Adjust positioning to be inside the input box */
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #120303; /* White arrow color */
+}
+
+.rep-chat-input .send-button:hover {
+  color: rgba(255, 0, 0, 0.63); /* Darker red hover color */
+}
+
+
+
+.timestamp.user {
+  padding-left: 0;
+}

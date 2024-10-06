@@ -1,0 +1,87 @@
+.dummy-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dummy-item-container {
+  margin-bottom: 10px;
+}
+
+.dummy-item {
+  padding: 10px;
+  background-color: #282c34d2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 230px;
+  height: 39px;
+  color: white;
+  text-align: start;
+  padding-left: 25px;
+}
+
+.dummy-item:hover {
+  background-color: rgb(197, 4, 4);
+  color: white;
+}
+
+.listStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 70vh;
+  overflow: auto !important;
+}
+
+.listStyle::-webkit-scrollbar {
+  width: 10px; /* Width of the entire scrollbar */
+}
+
+.listStyle::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the track (scrollbar background) */
+  border-radius: 10px; /* Rounded track corners */
+}
+
+.listStyle::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+  border: 2px solid #f1f1f1; /* Space around the scrollbar thumb */
+}
+
+.listStyle::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color when hovered */
+}
+
+.sub-links {
+  margin-top: 5px; 
+  margin-left: 15px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-link {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  /* opacity: 0; */
+}
+
+.sub-links.expanded {
+  opacity: 1;
+}
+
+.sub-link:hover {
+  text-decoration: underline;
+}
